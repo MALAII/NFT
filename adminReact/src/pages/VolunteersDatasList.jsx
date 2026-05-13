@@ -4,7 +4,7 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import "./VolunteersPage.css";
 import { ToastContainer, toast } from "react-toastify";
-const BACKENDURL = import.meta.env.BACKENDURL;
+const BACKENDURL = import.meta.env.VITE_BACKENDURL;
 
 const VolunteersPage = () => {
 
@@ -13,9 +13,9 @@ const VolunteersPage = () => {
 
     const fetchVolunteerDatas = async () => {
         try {
-            const response = await axios.get(
-                `${BACKENDURL}/api/volunteer-datas-get`
-            );
+           const response = await axios.get(
+   `${BACKENDURL}/api/volunteer/volunteer-datas-get`
+);
             setVolunteerData(response.data);
             setLoading(false);
         } catch (error) {
