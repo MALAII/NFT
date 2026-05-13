@@ -2,7 +2,7 @@ import "./AdminLogin.css"
 import axios from "axios"
 import { useState } from 'react';
 import { ToastContainer, toast } from "react-toastify"
-const BACKENDURL = import.meta.env.VITE_BACKENDURL;
+const BACKENDURL = import.meta.env.BACKENDURL;
 
 const Login = ({ setToken }) => {
 

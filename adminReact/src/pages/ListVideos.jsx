@@ -8,7 +8,7 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import ReactPlayer from "react-player";
 
-const BACKENDURL = import.meta.env.VITE_BACKENDURL;
+const BACKENDURL = import.meta.env.BACKENDURL;
 
 const ListVideos = () => {
 

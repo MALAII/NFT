@@ -3,7 +3,7 @@ import axios from "axios";
 import "./list.css";
 import { ToastContainer, toast } from 'react-toastify';
 
-const BACKENDURL = import.meta.env.VITE_BACKENDURL;
+const BACKENDURL = import.meta.env.BACKENDURL;
 
 const ListImages = () => {
 
