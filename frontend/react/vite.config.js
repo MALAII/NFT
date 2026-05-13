@@ -4,16 +4,22 @@ import envCompatible from "vite-plugin-env-compatible"
 
 // https://vite.dev/config/
 export default defineConfig({
-  // base:'/react/',
-  envPrefix: "BACKENDURL",
 
+  // base:'/react/',
+
+  build: {
     rollupOptions: {
-      external: ['swiper/react','react-player'],
+      external: ['swiper/react', 'react-player'],
+    },
   },
-  plugins: [react(),
-  envCompatible()],
+
+  plugins: [
+    react(),
+    envCompatible()
+  ],
+
   resolve: {
     extensions: ['.js', '.jsx', '.css'],
   }
-})
 
+})
