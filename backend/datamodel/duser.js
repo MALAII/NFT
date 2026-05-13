@@ -1,37 +1,44 @@
 import mongoose from "mongoose";
 
 //BECOME VOLUNTEER
-
 const volunteer = new mongoose.Schema({
     name: {
         type: String,
-        require: true
+        required: true
     },
+
     email: {
         type: String,
-        require: true,
+        required: true,
         unique: true
     },
+
     mobile: {
         type: Number,
-        require: true,
+        required: true,
     },
+
     city: {
         type: String,
-        require: true
+        required: true
     },
+
     message: {
         type: String,
-        require: true
+        required: true
     },
+
     role: {
         type: String,
         default: "Volunteer"
     },
 
-}, { timestamps: true })
+}, { timestamps: true });
 
-export const volunteerData = mongoose.model("Volunteer-Datas", volunteer)
+export const volunteerData = mongoose.model(
+    "volunteer-datas",
+    volunteer
+);
 
 /*
 const adminSendOtp = new mongoose.Schema({
