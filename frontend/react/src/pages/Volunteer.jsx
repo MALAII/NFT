@@ -3,8 +3,8 @@ import axios from "axios";
 import "./Volunteer.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-const BACKENDURL = import.meta.env.VITE_BACKENDURL;
-
+// const BACKENDURL = import.meta.env.VITE_BACKENDURL;
+const BACKENDURL = "https://nft-backend-9yzl.onrender.com";
 console.log(BACKENDURL)
 
 const Volunteer = () => {

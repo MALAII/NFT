@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import "./VolunteersPage.css";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
-const BACKENDURL = import.meta.env.VITE_BACKENDURL;
+const BACKENDURL = "https://nft-backend-9yzl.onrender.com";
+// const BACKENDURL = import.meta.env.VITE_BACKENDURL;
 console.log("BACKEND URL =", BACKENDURL)
 
 const VolunteersPage = () => {
