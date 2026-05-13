@@ -5,7 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import axios from "axios";
 import "./AdminVideoUpload.css";
 
-const BACKENDURL = import.meta.env.BACKENDURL;
+const BACKENDURL = import.meta.env.VITE_BACKENDURL;
 
 const AdminVideosUpload = () => {
 
