@@ -1,0 +1,404 @@
+/* Base styles */
+.contact-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f5f7fa;
+  color: #1b1b1b;
+}
+
+/* Hero Section */
+.contact-hero {
+  position: relative;
+  height: 350px;
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+
+.hero-overlay {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  animation: slideDown 1.2s ease-in-out;
+}
+
+.contact-title {
+  font-size: 3rem;
+  margin: 0;
+}
+
+.contact-subtitle {
+  font-size: 1.2rem;
+  margin-top: 0.5rem;
+}
+
+/* Grid Layout */
+.contact-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  padding: 3rem 2rem;
+  max-width: 1200px;
+  margin: auto;
+}
+
+/* Card Styles */
+.contact-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 2rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+.contact-card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.12);
+}
+
+.contact-card h2 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1.3rem;
+  color: #0a5275;
+  margin-bottom: 1rem;
+}
+
+.contact-card p {
+  margin: 0.4rem 0;
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes slideDown {
+  from {
+    transform: translate(-50%, -70%);
+    opacity: 0;
+  }
+  to {
+    transform: translate(-50%, -50%);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive Media Queries */
+
+/* 🌐 300px to 399px */
+@media (max-width: 399px) {
+  .contact-title {
+    font-size: 1.4rem;
+  }
+  .contact-subtitle {
+    font-size: 0.8rem;
+  }
+  .contact-grid {
+    padding: 0.4rem 0.3rem;
+    gap: 0.8rem;
+  }
+  .contact-card {
+    padding: 0.8rem;
+  }
+  .contact-hero {
+    height: 200px;
+  }
+
+
+
+
+
+.hero-image {
+  margin-top: 20%;
+  width: 100%;
+  height: 50%;
+  object-fit: contain;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.9rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+
+
+
+
+
+}
+
+/* 📱 400px to 599px */
+@media (min-width: 400px) and (max-width: 599px) {
+  .contact-title {
+    font-size: 1.9rem;
+  }
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+  .contact-grid {
+    padding: 1.5rem 1rem;
+    gap: 1rem;
+  }
+  .contact-card {
+    padding: 1.2rem;
+  }
+  .contact-hero {
+    height: 250px;
+  }
+
+
+
+
+.hero-image {
+  margin-top: 12%;
+  width: 100%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.9rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* 📱 600px to 767px */
+@media (min-width: 600px) and (max-width: 767px) {
+  .contact-title {
+    font-size: 2.2rem;
+  }
+  .contact-subtitle {
+    font-size: 1rem;
+  }
+  .contact-grid {
+    padding: 2rem 1rem;
+  }
+  .contact-hero {
+    height: 300px;
+  }
+
+
+
+
+.hero-image {
+  margin-top: 10%;
+  width: 100%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.9rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* 💊 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+  .contact-title {
+    font-size: 2.5rem;
+  }
+  .contact-subtitle {
+    font-size: 1.1rem;
+  }
+  .contact-grid {
+    padding: 2rem 1.5rem;
+    gap: 1.5rem;
+  }
+  .contact-card {
+    padding: 1.5rem;
+  }
+  .contact-hero {
+    height: 320px;
+  }
+
+
+.hero-image {
+  margin-top: 5%;
+  width: 100%;
+  height: 60%;
+  object-fit: contain;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.9rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+}
+
+/* 💻 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .contact-title {
+    font-size: 2.8rem;
+  }
+  .contact-subtitle {
+    font-size: 1.2rem;
+  }
+  .contact-grid {
+    padding: 2.5rem 2rem;
+  }
+  .contact-hero {
+    height: 370px;
+  }
+
+
+
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.9rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+
+
+
+
+
+
+
+
+
+
+  
+}
+
+/* 🖥️ 1200px and above */
+@media (min-width: 1200px) {
+  .contact-title {
+    font-size: 3.2rem;
+  }
+  .contact-subtitle {
+    font-size: 1.4rem;
+  }
+  .contact-hero {
+    height: 400px;
+  }
+
+
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.contact-card {
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.9rem;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  animation: fadeInUp 1s ease forwards;
+  opacity: 0;
+  animation-delay: 0.2s;
+}
+
+
+
+
+
+
+}

@@ -1,0 +1,290 @@
+
+/* Variables for consistent theme */
+:root {
+  --primary-color: #4CAF50;
+  --light-green: #e8f5e9;
+  --bg-color: #f5f9f6;
+  --text-dark: #2e3a3a;
+  --text-light: #5f6f7a;
+  --accent-color: #81c784;
+}
+
+/* Base Layout */
+.bank-container {
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5rem;
+}
+
+.bank-card {
+  margin-top: 1.2px;
+  background: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.1);
+  max-width: 1200px;
+  width: 100%;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+/* Left & Right Panels */
+.left-card,
+.right-card {
+  flex: 1 1 45%;
+  text-align: center;
+}
+
+/* Logo / QR */
+.image-box {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto 1rem;
+}
+
+.image-box img.logo {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-bottom: 0.5rem;
+}
+.right-card h2{
+  color: #ff2003;
+}
+.caption {
+  font-size: 0.9rem;
+  color: var(--text-light);
+  margin-top: 0.25rem;
+}
+
+/* QR Styling */
+.qr-box {
+  background-color: #fff;
+  padding: 0.5rem;
+  border-radius: 12px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.06);
+  display: inline-block;
+}
+
+.qr {
+  width: 180px;
+  height: 180px;
+  object-fit: contain;
+}
+
+/* Bank Info */
+.logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.bank-logo {
+  width: 200px;
+  height: 64px;
+  object-fit: contain;
+}
+
+.bank-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--text-dark);
+}
+
+/* Info Cards */
+.info-card {
+  width: 100%;
+  background: var(--light-green);
+  padding: 1rem;
+  border-left: 5px solid var(--primary-color);
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+  text-align: left;
+}
+
+.label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-dark);
+}
+
+.value {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-light);
+  margin-bottom: 0.4rem;
+}
+
+/* Note & Thank You */
+.note {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 1.2rem;
+  color: #374151;
+  text-align: justify;
+  background-color: #f0fdf4;
+  border-left: 4px solid var(--accent-color);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.thankyou {
+  font-size: 1.1rem;
+  font-weight: bold;
+  color: #2e7d32;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Responsive Layouts */
+@media (max-width: 767px) {
+  .bank-card {
+    margin-top: 60px;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .left-card,
+  .right-card {
+    flex: 1 1 100%;
+  }
+
+  .image-box {
+    width: 160px;
+    height: 160px;
+  }
+
+  .qr {
+    width: 160px;
+    height: 160px;
+  }
+
+  .bank-logo {
+    width: 160px;
+    height: 55px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .thankyou {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .bank-card {
+ 
+    padding: 1rem;
+  }
+
+  .image-box {
+    width: 140px;
+    height: 140px;
+  }
+
+  .qr {
+    width: 140px;
+    height: 140px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* 📱 Responsive Media Queries from 300px upward */
+
+/* 300px to 399px */
+@media (max-width: 399px) {
+ 
+}
+
+/* 400px to 599px */
+@media (min-width: 400px) and (max-width: 599px) {
+
+}
+
+/* 600px to 767px */
+@media (min-width: 600px) and (max-width: 767px) {
+
+}
+
+/* 768px to 991px */
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+  .bank-card {
+    margin-top: 60px;
+    flex-direction: column;
+    padding: 1.5rem;
+  }
+
+  .left-card,
+  .right-card {
+    flex: 1 1 100%;
+  }
+
+  .image-box {
+    width: 160px;
+    height: 160px;
+  }
+
+  .qr {
+    width: 160px;
+    height: 160px;
+  }
+
+  .bank-logo {
+    width: 160px;
+    height: 55px;
+  }
+
+  .title {
+    font-size: 1.1rem;
+  }
+
+  .thankyou {
+    font-size: 1rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+/* 992px to 1199px */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* 1200px and above */
+@media (min-width: 1200px) {
+
+}

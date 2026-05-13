@@ -1,0 +1,104 @@
+/* Container */
+.donation-container {
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+.donation-header {
+  text-align: center;
+  color: #c31212;
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Grid */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+}
+
+/* Card */
+.donation-card {
+  flex: 0 1 calc(25% - 20px); /* 4 cards per row on desktop */
+  min-width: 150px;
+  max-width: 250px;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.donation-card:hover {
+  border-color: #c31212;
+  background-color: #fff3e6;
+}
+
+.donation-card.active {
+  border-color: #c36212;
+  background-color: #ffe0c1;
+}
+
+/* Description Panel */
+.description-panel {
+  margin-top: 40px;
+  background-color: #fff9f5;
+  border-left: 4px solid #c36212;
+  padding: 20px;
+  border-radius: 8px;
+  color: #444;
+}
+
+.description-panel h2 {
+  margin-bottom: 10px;
+  color: #c36212;
+}
+
+/* Responsive Styles */
+@media (max-width: 1024px) {
+  .donation-card {
+  
+    flex: 0 1 calc(33.33% - 20px); /* 3 per row on tablets */
+  }
+}
+
+@media (max-width: 768px) {
+  .donation-header {
+    margin-top: 50px;
+    font-size: 1.6rem;
+  }
+
+  .donation-card {
+    flex: 0 1 calc(50% - 20px); /* 2 per row on smaller tablets and big phones */
+  }
+
+  .description-panel {
+    padding: 16px;
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .donation-header {
+    margin-top: 50px;
+    font-size: 1.4rem;
+  }
+
+  .donation-card {
+    flex: 0 1 100%; /* 1 per row on small phones */
+    max-width: 100%;
+  }
+
+  .description-panel {
+    font-size: 0.9rem;
+  }
+}

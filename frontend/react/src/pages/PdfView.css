@@ -1,0 +1,203 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f6f8;
+}
+
+/* Container */
+.pdf-view-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Page Title */
+.page-title {
+  text-align: center;
+  font-size: 2.2rem;
+  color: #1a237e;
+  margin-top: 120px;
+  margin-bottom: 60px;
+  animation: fadeInDown 0.8s ease-out;
+}
+
+/* Responsive Grid */
+.pdf-grid {
+  display: grid;
+  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+/* Card */
+.pdf-card {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  animation: fadeInUp 0.6s ease forwards;
+  opacity: 0;
+}
+
+.pdf-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Title */
+.pdf-card h2 {
+  font-size: 1.1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Button */
+.view-btn {
+  padding: 10px 18px;
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.view-btn:hover {
+  background-color: #0d47a1;
+  box-shadow: 0 0 12px rgba(25, 118, 210, 0.4);
+}
+
+/* PDF Embed Viewer */
+.pdf-embed {
+  margin-top: 15px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  animation: slideDown 0.5s ease-in-out;
+}
+
+/* Fullscreen Viewer */
+.fullscreen-pdf {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #111;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+
+.fullscreen-pdf iframe {
+  flex-grow: 1;
+  width: 100%;
+  border: none;
+}
+
+.close-btn {
+  background-color: #ff5252;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  font-size: 16px;
+  align-self: flex-end;
+  cursor: pointer;
+  margin: 10px;
+  border-radius: 6px;
+}
+
+.close-btn:hover {
+  background-color: #d32f2f;
+}
+
+/* ---------- Animations ---------- */
+@keyframes fadeInUp {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+    transform: scaleY(0.95);
+  }
+  to {
+    max-height: 1000px;
+    opacity: 1;
+    transform: scaleY(1);
+  }
+}
+
+/* ---------- Media Queries ---------- */
+
+/* Small tablets and below */
+@media (max-width: 768px) {
+  .page-title {
+    font-size: 1.8rem;
+    margin-top: 80px;
+    margin-bottom: 40px;
+  }
+
+  .pdf-card {
+    padding: 15px;
+  }
+
+  .view-btn {
+    padding: 8px 14px;
+    font-size: 13px;
+  }
+
+  .close-btn {
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+  .page-title {
+    font-size: 1.6rem;
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .pdf-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .pdf-card h2 {
+    font-size: 1rem;
+  }
+
+  .view-btn {
+    width: 100%;
+    font-size: 13px;
+  }
+
+  .close-btn {
+    width: 100%;
+    font-size: 14px;
+  }
+}

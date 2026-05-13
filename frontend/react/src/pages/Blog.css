@@ -1,0 +1,122 @@
+.blog-container {
+  margin-top: 1%;
+  padding: 0.4rem 0.8rem;
+  background-color: #f9f9f9;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.blog-title {
+  text-align: center;
+  font-size: 2.0rem;
+  color: #ff8800;
+  margin-bottom: 0.2rem;
+}
+
+.blog-subtitle {
+  text-align: center;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  color: #049b0c;
+  padding: 0 1rem;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.3rem;
+}
+
+.blog-card {
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out;
+}
+
+.blog-card:hover {
+  transform: translateY(-5px);
+}
+
+.blog-image {
+  width: 100%;
+  height: 310px;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.zoom-effect:hover {
+  transform: scale(1.08);
+}
+
+.blog-content {
+  padding: 1rem;
+}
+.blog-content h2 {
+  font-size: 16px;
+}
+
+
+.blog-date {
+  color: #999;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+}
+.blogPosts-title {
+
+  font-size: 0.95rem;
+  margin-bottom: 1.5rem;
+}
+/* ===================== Responsive Adjustments ===================== */
+@media (max-width: 768px) {
+  .blog-title {
+
+    font-size: 1.8rem;
+  }
+
+  .blog-subtitle {
+    font-size: 0.95rem;
+  }
+
+  .blog-image {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .blog-title {
+    margin-top: 50px;
+    font-size: 1.0rem;
+  }
+
+  .blog-subtitle {
+    font-size: 0.8rem;
+  }
+
+  .blog-content {
+    padding: 0.5rem;
+    
+  }
+
+  .blog-image {
+    height: 170px;
+   
+  }
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+}
+
+
+
+
+.blog-container {
+  margin-top: 5%;
+
+}
+
+
+
+}

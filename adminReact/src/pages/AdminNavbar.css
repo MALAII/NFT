@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@200;300;400;500;600;700&display=swap");
+
+.admin-image img {
+    width: 150px;
+
+}
+
+/* .admin-image h1 {
+    color: green;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+} */
+
+
+
+
+.admin-navbar-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.admin-logout-btn {
+    margin: 0px 10px 0px
+}
+
+.admin-logout-btn .but {
+
+    padding: 13px;
+    font-size: larger;
+    font-weight: 600;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    background-color: #fa2e0a;
+
+}
+
+.admin-logout-btn .but:hover {
+    background-color: rgb(94, 255, 0);
+    transition-duration: 0.7s;
+}
+
+@media(max-width:700px) {
+
+    .admin-image img {
+        width: 100px;
+    }
+
+    .admin-heading h1 {
+        font-size: large;
+    }
+
+}
+
+@media(max-width:500px) {
+
+    .admin-image img {
+        width: 70px;
+    }
+
+    .admin-heading h1 {
+        font-size: small;
+    }
+
+    .admin-logout-btn {
+        margin: 0px 5px 0px
+    }
+
+    .admin-logout-btn .but {
+
+        padding: 7px;
+        font-size:small;
+
+    }
+
+}

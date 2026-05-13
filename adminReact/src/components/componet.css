@@ -1,0 +1,17 @@
+* {
+  text-decoration: none;
+}
+
+.admin-sidebar-collumn {
+  display: flex;
+  width: 100%;
+  border: 3px solid gray;
+
+}
+
+.admin-side1 {
+  /* background-color: rgb(34, 0, 255); */
+  width: 100%;
+
+
+}

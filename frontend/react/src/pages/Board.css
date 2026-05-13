@@ -1,0 +1,221 @@
+/* Default styles for desktop (large screens) remain unchanged */
+.boardImage {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.boardImage img {
+    width: 100%;
+    max-width: 2000px;
+}
+
+.board-head {
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(195, 98, 18);
+    font-size: 2.5rem;
+    margin: 30px 0;
+}
+
+.photo1 {
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.photo1 img {
+    border-radius: 50%;
+    width: 160px;
+    border: 2px solid rgb(215, 95, 26);
+    padding: 10px;
+}
+
+.row1 {
+    margin: 50px 0px;
+    flex-basis: 32%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.photo1 h4,
+.row1 h4 {
+    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-bottom: 3px dotted rgb(215, 95, 26);
+    margin: 5px 0px;
+    color: rgb(215, 95, 26);
+    font-weight: 900;
+}
+
+.photo2 {
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.photo2 img {
+    width: 140px;
+    border-radius: 50%;
+    border: 3px solid rgb(215, 95, 26);
+    padding: 5px;
+}
+
+.row2 {
+    margin-top: 32px;
+}
+
+/* ------------------------------------
+   MEDIA QUERIES FOR RESPONSIVENESS
+------------------------------------- */
+
+/* Tablets (768px and below) */
+@media (min-width: 300px) and (max-width: 575px)  {
+    .board-head {
+        font-size: 1.2rem;
+    }
+
+    .photo2 {
+        justify-content: center;
+    }
+
+    .photo1 img,
+    .photo2 img {
+
+        width: 100px;
+    }
+
+    .row1 {
+        flex-basis: 45%;
+        margin: 30px 0;
+    }
+
+
+    .row1,h4 {
+        font-size: 0.5rem;
+    }
+
+.boardImage {
+    padding-top: 70px;
+  
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+}
+
+@media (min-width: 575px) and (max-width: 768px){
+
+
+    .board-head {
+        font-size: 1.2rem;
+    }
+
+    .photo2 {
+        justify-content: center;
+    }
+
+    .photo1 img,
+    .photo2 img {
+
+        width: 120px;
+    }
+
+    .row1 {
+        flex-basis: 45%;
+        margin: 30px 0;
+    }
+
+
+    .row1,h4 {
+        font-size: 0.9rem;
+    }
+
+.boardImage {
+    padding-top: 36px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+}
+@media (min-width: 769px) and (max-width:992px ){
+
+
+
+    .board-head {
+        font-size: 1.5rem;
+    }
+
+    .photo2 {
+        justify-content: center;
+    }
+
+    .photo1 img,
+    .photo2 img {
+
+        width: 120px;
+    }
+
+    .row1 {
+        flex-basis: 45%;
+        margin: 30px 0;
+    }
+
+
+    .row1,h4 {
+        font-size: 1.0rem;
+    }
+
+.boardImage {
+   padding-top: 32px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+}
+@media (min-width: 1200px){
+
+
+
+
+    .board-head {
+        font-size: 1.8rem;
+    }
+
+    .photo2 {
+        justify-content: center;
+    }
+
+    .photo1 img,
+    .photo2 img {
+
+        width: 120px;
+    }
+
+    .row1 {
+        flex-basis: 45%;
+        margin: 30px 0;
+    }
+
+
+    .row1,h4 {
+        font-size: 1.5rem;
+    }
+
+.boardImage 
+    {
+
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+}

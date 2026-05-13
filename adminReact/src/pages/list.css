@@ -1,0 +1,178 @@
+.list-image-div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /* justify-content: center; */
+
+}
+
+.list-image-div img {
+  width: 200px;
+}
+.list-images-Date{
+  display: flex;
+  justify-content: center;
+}
+
+.image-remove-btn3 {
+  background-color: rgb(251, 4, 4);
+  border: none;
+  position: relative;
+  left: 30px;
+  bottom: 6px;
+  font-size: 22px;
+  width: 30px;
+  font-weight: 900;
+  border-radius: 50px;
+  cursor: pointer;
+  color: white;
+}
+
+.image-gallery-items img {
+  border-radius: 20px;
+}
+
+/* TITLE + EDIT SECTION */
+
+.image-title-edit{
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.image-title-edit h3{
+    font-size: 22px;
+    font-weight: 700;
+    color: #222;
+    text-transform: capitalize;
+    text-align: center;
+}
+
+
+/* INPUT */
+
+.image-title-edit input{
+    width: 90%;
+    padding: 10px 14px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    outline: none;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+.image-title-edit input:focus{
+    border-color: #ff6600;
+    box-shadow: 0 0 5px rgba(255,102,0,0.3);
+}
+
+
+/* BUTTON COMMON */
+
+.edit-btn,
+.save-btn{
+    border: none;
+    padding: 10px 18px;
+    border-radius: 8px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+
+/* EDIT BUTTON */
+
+.edit-btn{
+    background: #007bff;
+    color: white;
+}
+
+.edit-btn:hover{
+    background: #0056b3;
+}
+
+
+/* SAVE BUTTON */
+
+.save-btn{
+    background: #28a745;
+    color: white;
+}
+
+.save-btn:hover{
+    background: #1f7a33;
+}
+
+
+/* DATE */
+
+.list-images-Date{
+    margin-top: 12px;
+    text-align: center;
+}
+
+.list-images-Date h4{
+    font-size: 14px;
+    color: #555;
+}
+
+
+/* IMAGE CARD */
+
+.image-gallery-items{
+    background: white;
+    padding: 18px;
+    border-radius: 16px;
+    box-shadow: 0 4px 14px rgba(0,0,0,0.1);
+    transition: 0.3s ease;
+}
+
+.image-gallery-items:hover{
+    transform: translateY(-5px);
+}
+@media(max-width:800px) {
+
+  .list-image-div img {
+    width: 120px;
+  }
+  .list-images-Date h4{
+  font-size: small;
+  margin-left: 15px;
+  
+}
+
+}
+
+@media(max-width:400px) {
+
+  .list-image-div img {
+    width: 120px;
+    border-radius: 7px;
+  }
+  .list-image-divh1{
+    font-size: small;
+  }
+
+  .image-remove-btn3 {
+  
+  left: 20px;
+  bottom: 2px;
+  font-size: 10px;
+  width: 20px;
+  font-weight: 900;
+  border-radius: 50px;
+ 
+}
+}
+
+@media(max-width:357px) {
+
+  .list-image-div img {
+    width: 100px;
+    border-radius: 7px;
+  }
+  
+}
