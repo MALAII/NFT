@@ -39,7 +39,7 @@ const Navi = () => {
         {/* Desktop Nav */}
         <div className='mobile-view'>
           <ul className='nav-link'>
-            <li><NavLink to='/Home' exact="true">Home</NavLink></li>
+            <li><NavLink to='/' exact="true">Home</NavLink></li>
             <li className="dropdown"
               onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}
@@ -64,7 +64,7 @@ const Navi = () => {
         {/* Sidebar for Mobile */}
         <div className={`mobile-views ${showSideBar ? 'active' : ''}`} ref={menuRef}>
           <ul className='nav-link'>
-            <li><NavLink to='/Home' onClick={handleNavClick}>Home</NavLink></li>
+            <li><NavLink to='/' onClick={handleNavClick}>Home</NavLink></li>
             <li className="dropdown"
               onMouseEnter={() => setIsDropdownOpen(true)}
               onMouseLeave={() => setIsDropdownOpen(false)}

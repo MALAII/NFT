@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Link } from "react-router-dom";
+import Donation from './Donation';
 
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -166,7 +167,7 @@ function Home() {
     ))}
   </div>
 </div>
-
+<Donation />
 
     </div>
     
