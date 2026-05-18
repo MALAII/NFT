@@ -47,7 +47,7 @@ const Navi = () => {
               <p>About <GoChevronDown /></p>
               <div className="dropdown-content">
                 <Link className='a' to="/About">About Us</Link>
-                <Link className='a' to="/Board of trustees">Board of Trustees</Link>
+                <Link className='a' to="/Board_of_trustees">Board of Trustees</Link>
                 <Link className='a' to="/Mission">Mission & Vision</Link>
                 <Link className='a' to="/Volunteer">Volunteer</Link>
                     <Link className='a' to="/PdfView">Documents</Link>
@@ -72,7 +72,7 @@ const Navi = () => {
               <p>About <GoChevronDown /></p>
               <div className="dropdown-content">
                 <Link className='a' to="/About" onClick={handleNavClick}>About Us</Link>
-                <Link className='a' to="/Board of trustees" onClick={handleNavClick}>Board of Trustees</Link>
+                <Link className='a' to="/Board_of_trustees" onClick={handleNavClick}>Board of Trustees</Link>
                 <Link className='a' to="/Mission" onClick={handleNavClick}>Mission & Vision</Link>
                 <Link className='a' to="/Volunteer" onClick={handleNavClick}>Volunteer</Link>
                   <Link className='a' to="/PdfView">Documents</Link>     

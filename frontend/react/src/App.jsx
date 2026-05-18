@@ -34,7 +34,7 @@ function App() {
                   <Route path='Donation' element={<Donation />} />
                   <Route path='Volunteer' element={<Volunteer />} />
                   <Route path='Mission' element={<Mission />} />
-                  <Route path='Board of trustees' element={<Board />} />
+                  <Route path='Board_of_trustees' element={<Board />} />
                   <Route path='Gallery' element={<Gallery />} />
                   <Route path="/Bank/:slug" element={<Bank />} />
                   {/* <Route path='Reports' element={<Reports />} /> */}

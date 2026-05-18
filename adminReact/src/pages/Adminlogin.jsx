@@ -6,7 +6,7 @@ const BACKENDURL = import.meta.env.BACKENDURL;
 
 const Login = ({ setToken }) => {
 
-console.log(BACKENDURL)
+  console.log(BACKENDURL)
 
   const [formData, setFormData] = useState({
     email: '',
@@ -33,6 +33,10 @@ console.log(BACKENDURL)
       data.success ? toast.success(data.message) : toast.error(data.message)
       console.log(data.token)
       setToken(data.token)
+      localStorage.setItem(
+        "adminLoginTime",
+        Date.now()
+      );
     }
     catch (error) {
       toast.error(error.message)

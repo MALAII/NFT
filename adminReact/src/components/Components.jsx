@@ -22,9 +22,37 @@ const Components = () => {
 
     useEffect(() => {
 
-        localStorage.setItem("token", token)
+        const interval = setInterval(() => {
 
-    }, [token])
+            const loginTime =
+                localStorage.getItem("adminLoginTime");
+
+            if (loginTime) {
+
+                const currentTime = Date.now();
+
+                const thirtyMinutes =
+                    30 * 60 * 1000
+
+                if (
+                    currentTime - loginTime >
+                    thirtyMinutes
+                ) {
+
+                    localStorage.removeItem("token");
+                    localStorage.removeItem("adminLoginTime");
+
+                    setToken("");
+
+                }
+
+            }
+
+        }, 1000);
+
+        return () => clearInterval(interval);
+
+    }, []);
 
     return (
         <div>
@@ -46,8 +74,8 @@ const Components = () => {
                                 <Route path='/Upload-images' element={<AdminImageUpload />} />
                                 <Route path='/List-Images' element={<ListImages />}></Route>
                                 <Route path='/Upload-videos' element={<AdminVideosUpload />} />
-                                <Route path='/List-videos' element={<ListVideos/>}/>
-                                <Route path='/Volunteer-datas' element={<VolunteersDatasList/>}/>
+                                <Route path='/List-videos' element={<ListVideos />} />
+                                <Route path='/Volunteer-datas' element={<VolunteersDatasList />} />
                             </Routes>
 
                         </div>
